@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p1"></p>
+
+<!--<ol class="carousel-indicators">-->
+
+<!--</ol>-->
+
+<script src="../jquery-1.12.4.js"></script>
+<script src="template-native.js"></script>
+<script src="123.js"></script>
+<!--art-template是运行在沙箱内部的，所以它不能调用外部变量，对全局变量也做了封锁，因此无法在原生js中使用-->
+<script type="text/template" id="pointTem">
+
+    {{if true}}
+    <span>{{ #1 }}</span>
+    {{/if}}
+</script>
+
+<!--<script type="text/template" id="pointTem">-->
+    <!--<% for(var i = 0; i < list.length; i++) { %>-->
+    <!--<li data-target="#carousel-example-generic" data-slide-to="<%=i%>" class="<%=i===0?'active': ''%>"><%=i%></li>-->
+    <!--<% } %>-->
+<!--</script>-->
+
+</body>
+</html>
